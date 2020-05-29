@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem item){
         if(item.getItemId()==0){ //check whether the selected menu item ID is 0
             //code for action
-            tvTranslatedText.setText("English is chosen");
+            tvTranslatedText.setText("Hello");
             return true; //menu item successfully handled
         }else if(item.getItemId()==1){
-            tvTranslatedText.setText("Italian is chosen");
+            tvTranslatedText.setText("Ciao");
             return true;
         }
         return super.onContextItemSelected(item); //pass menu item to the suoerclass implementation
