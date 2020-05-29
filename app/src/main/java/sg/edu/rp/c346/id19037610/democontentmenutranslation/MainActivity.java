@@ -22,14 +22,14 @@ public class MainActivity extends AppCompatActivity {
 
         registerForContextMenu(tvTranslatedText);
     }
-
+    @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo){
         super.onCreateContextMenu(menu, v, menuInfo);
 
         menu.add(0, 0, 0, "English");
         menu.add(0, 1, 1, "Italian");
     }
-
+    @Override
     public boolean onContextItemSelected(MenuItem item){
         if(item.getItemId()==0){ //check whether the selected menu item ID is 0
             //code for action
